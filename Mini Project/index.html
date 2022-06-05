@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section> 
         <nav>
-            <img src="images/FES.svg" alt="">
+            <img src="images/FES.svg" class="logo" alt="">
             <ul>
                 <li> <a href="About">About</a></li>
                 <li> <a href="Projects">Projects</a></li>
@@ -17,14 +18,16 @@
             </ul>
         </nav>
         <header>
-            <div>
-                <h1>Best place to learn frontend</h1>
-                <p>Go from absolute beginner to pro with a simpilified process</p>
-                <button>Start now</button>
+            <div class="row">
+                <div>
+                    <h1>Best place to learn frontend</h1>
+                    <p class ="subheader">Go from absolute beginner to pro with a simpilified process</p>
+                    <button>Start now</button>
+                </div>
+                <figure>
+                    <img src="images/laptop.png" alt="">
+                </figure>
             </div>
-            <figure>
-                <img src="images/laptop.png" alt="">
-            </figure>
         </header>
     </section>
 
@@ -33,23 +36,27 @@
 <main>
     <section id="About">
         <h2>About</h2>
-        <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tenetur minus aliquam deleniti excepturi, adipisci corporis asperiores magnam possimus modi dicta ea tempore quae, ratione quam, fugiat neque obcaecati aperiam.</p>
+        <div class="section_description">
+            <div class="section_description--wrapper">
+            <p class="section_description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tenetur minus aliquam deleniti excepturi, adipisci corporis asperiores magnam possimus modi dicta ea tempore quae, ratione quam, fugiat neque obcaecati aperiam.</p>
+            </div>
+            <figure class="about_img-wrapper">
+            <img src="images/about.jpg" alt="">
+            </figure>
         </div>
-        <figure>
-        <img src="images/about.jpg" alt="">
-        </figure>
     </section>
 
 
     <section id="Discord">
         <h2>Discord</h2>
-        <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quaerat veniam nulla eligendi quo deserunt, molestiae temporibus eum laborum nam corporis placeat magnam assumenda nisi unde voluptatum quos officiis natus.</p>
+        <div class="section_description">
+                <figure class="about_img-wrapper">
+                <img src="images/discord.png" alt="">
+                </figure>
+                <div class="section_description--wrapper">
+                    <p class="section_description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quaerat veniam nulla eligendi quo deserunt, molestiae temporibus eum laborum nam corporis placeat magnam assumenda nisi unde voluptatum quos officiis natus.</p>
+                </div>
         </div>
-        <figure>
-        <img src="images/discord.png" alt="">
-        </figure>
     </section>
 
 
@@ -66,13 +73,13 @@
 </main>
 
 <footer>
-    <img src="images/FES.svg" alt="">
-    <div> 
+    <img class="footer_logo" src="images/FES.svg" alt="">
+    <div class="footer_links"> 
     <ul>
-        <li> <a href="About"></a>About</li>
-        <li><a href="Discord"></a>Discord</li>
-        <li><a href="Contact"></a>Contact</li>
-        <li>Courses</li>
+        <li class="footer_link"><a href="About"></a>About</li>
+        <li class="footer_link"><a href="Discord"></a>Discord</li>
+        <li class="footer_link"><a href="Contact"></a>Contact</li>
+        <li class="footer_link"><a href=""></a>Courses</li>
     </ul>
     </div>
     <p>Copyright Frontend Simplified</p>
