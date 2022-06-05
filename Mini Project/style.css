@@ -120,7 +120,7 @@ img{
  form{
     width: 100%;
     max-width: 600px;
-
+    padding: 0 24px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -157,7 +157,45 @@ img{
  @media (max-width: 728px) {
      .row{
          flex-direction: column;
-         
      }
 
- }
+     .home_description{
+         margin-bottom: 24px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     h1{
+         text-align: center;
+         font-size: 60px;
+     }
+
+     .subheader{
+         text-align: center;
+         font-size: 28px;
+     }
+
+     .section_description{
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .section_description--wrapper{
+         width: 100%;
+     }
+
+     .about_img-wrapper{
+         width: 100%;
+     }
+
+     #Discord .section_description{
+         flex-direction: column-reverse;
+     }
+
+     .footer_logo{
+       max-width: 360px;
+
+     }
+     }
+
